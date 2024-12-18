@@ -1,168 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
 }
 
 body {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 30px;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    border-bottom: 1px
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 5%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  width: 100%;
 }
 
 .logo {
-    font-size: 24px;
-    margin-right: 40px;
-    font-weight: 600;
-    color: #4d1e1e;
+  font-size: 24px;
+  margin-right: 40px;
+  font-weight: 600;
+  color: #4d1e1e;
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 
 nav ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #000;
-
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
 }
 
 .nav-links li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 16px;
-    transition: color 0.3s;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
 }
 
 .nav-link li a:hover {
-    color: #4d1e1e;
+  color: #4d1e1e;
 }
 
-.dropdown>a {
-    position: relative;
-    display: inline-block;
-    padding-right: 15px;
+.dropdown > a {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
 }
 
-.dropdown>a::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #4d1e1e;
-    /* Color de la flecha */
-
+.dropdown > a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #4d1e1e;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown:hover {
-    display: flex;
+  display: flex;
 }
 
 .dropdown-menu {
-    display: none;
-    padding: 20px 0px;
-    width: 300px;
-    top: 70%;
-    text-align: center;
-    gap: 15px;
-    position: absolute;
-    z-index: 10;
-    background-color: beige;
-    border: 1px solid #ddd;
-
+  display: none;
+  padding: 20px 0px;
+  width: 300px;
+  top: 70%;
+  text-align: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 10;
+  background-color: beige;
+  border: 1px solid #ddd;
 }
 
 .dropdown-menu li a {
-    width: auto;
-    padding: 20px;
+  width: auto;
+  padding: 20px;
 }
 
-
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 nav ul li a:active {
-    color: beige;
+  color: beige;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .search-bar {
-    display: flex;
-    border: 1px solid #4d1e1e;
-    overflow: hidden;
+  display: flex;
+  border: 1px solid #4d1e1e;
+  overflow: hidden;
 }
 
 .search-bar input {
-    border: none;
-    padding: 5px 10px;
-    outline: none;
-    width: 200px;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  width: 200px;
 }
 
 .search-bar button {
-    background-color: #4d1e1e;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #4d1e1e;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .search-bar button i {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .icons {
-    display: flex;
-    padding: 5px 10px;
-    align-items: center;
-    width: auto;
-    height: auto;
-    gap: 40px;
-    cursor: pointer;
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  width: auto;
+  height: auto;
+  gap: 40px;
+  cursor: pointer;
 }
 
 .icons a {
-    margin-right: 10px;
-    color: #4d1e1e;
-    font-size: 20px;
-    text-decoration: none;
+  margin-right: 10px;
+  color: #4d1e1e;
+  font-size: 20px;
+  text-decoration: none;
 }
