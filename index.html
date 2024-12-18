@@ -1,47 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="./styles/main-navbar.css" />
+    <link rel="stylesheet" href="./styles/main-description.css" />
+    <link rel="stylesheet" href="./styles/main-footer.css" />
+    <link rel="stylesheet" href="./styles/main-contact.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Chocobrat</div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+        <ul class="nav-links">
+          <li><a href="#" id="current-page">Home</a></li>
+          <li class="dropdown">
+            <a href="./categories.html">Categories</a>
+            <ul id="categories-menu" class="dropdown-menu">
+              <li><a href="#">Red Velvet & Cream Cheese</a></li>
+              <li><a href="#">Caramel Drizzle Cakes</a></li>
+              <li><a href="#">Lemon Zest Creations</a></li>
+            </ul>
+          </li>
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+          <li><a href="./about.html">About Us</a></li>
+          <li id="last-item"><a href="./contact.html">Contact Us</a></li>
+        </ul>
 
-  <link rel="stylesheet" href="./styles/main-footer.css">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button type="submit">
+            <img
+              src="./images/lens.png"
+              alt="lens"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+        </div>
 
-
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-top">
-      <div class="footer-logo">
-        <h2>Chocobrat</h2>
-      </div>
-      <nav class="footer-nav">
-        <a href="#">Home</a>
-        <a href="#">Categories</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Careers</a>
-        <a href="#">Help</a>
-        <a href="#">Privacy</a>
+        <div class="icons">
+          <img
+            src="./images/user.png"
+            alt="user"
+            style="width: 25px; height: 25px"
+          />
+          <img
+            src="./images/cart.png"
+            alt="cart"
+            style="width: 25px; height: 25px"
+          />
+        </div>
       </nav>
-    </div>
-
-    <hr>
-
-    <div class="footer-bottom">
-      <p>&copy; 2021 Chocobrat. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="#"><img src="./images/icon-facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="./images/icon-twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="./images/icon-instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="./images/icon-github.png" alt="GitHub"></a>
-        <a href="#"><img src="./images/icon-linkedin.png" alt="LinkedIn"></a>
+    </header>
+  </head>
+  <body>
+    <main>
+      <div id="presentation">
+        <div class="introduction">
+          <h1>Bring you Happiness throught a piece of cake</h1>
+          <p>
+            We make Different types of cake, cholocate, soft cookies, cheesecake
+            pie or anything you want.
+          </p>
+          <div class="introduction-btn">
+            <button>Order Now</button>
+            <button>Seel All Menus</button>
+          </div>
+        </div>
+        <div class="cakes">
+          <div class="main-cake">
+            <img src="./images/chocolate-cake.png" />
+          </div>
+          <div class="carousel-cake">
+            <div class="carousel-counter">
+              <img src="./images/less-than.png" />
+              <span>01/¹²</span>
+              <img src="./images/more-than.png" />
+            </div>
+            <div class="carousel-cake-images">
+              <img src="./images/carousel-1.png" />
+              <img src="./images/carousel-2.png" />
+              <img src="./images/carousel-3.png" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
 
+      <div id="best-selling">
+        <h1>Try our Best Selling</h1>
+        <img src="./images/divider.png" />
+        <p>
+          Here's our best creations that everyone loves. Lightness and sweetness
+          of the cake make you want more and more. Start from cake, bread and
+          other creations.
+        </p>
+      </div>
+
+      <section class="features">
+        <div class="feature-row">
+          <div class="feature-text">
+            <h2>We Bake for you <br>Fresh From the oven</h2>
+            <p>We use quality materials that we get directly from farmers.
+              Our backers are experienced people in the food sector. So that the products we produce are guaranteed
+              quality and taste.
+              It's so delicious, you have to try it!</p>
+            <br><a href="#" class="read-more">Read More <span>&#8594;</span></a>
+          </div>
+          <div>
+            <img src="./images/image-baking.png" alt="Baking Fresh" class="feature-image">
+          </div>
+        </div>
+  
+        <div class="feature-row reverse">
+          <div class="feature-text">
+            <h2>Come and choose<br>your favourites</h2>
+            <p>Try to come to our shop directly to enjoy the delicious taste of the cake that just came out of the oven.
+              While enjoying it with a cup of coffee or tea in our very convenient shop. Very suitable for chatting,
+              meeting with your team.</p>
+            <br><a href="#" class="read-more">Read More <span>&#8594;</span></a>
+          </div>
+          <div>
+            <img src="./images/image-baking.png" alt="Choose Favourites" class="feature-image">
+          </div>
+        </div>
+      </section>
+
+      <section class="cake-orders">
+        <article class="cake-orders-banner">
+          <h2>For Cake Orders above 1 KG</h2>
+          <p>
+            Please visit our nearest store or call us on +91 00 00 00 00 00 (10 AM to 7 PM) <br>
+            to place your orders. 
+          </p>
+          <a href="#" class="btn-primary">Contact Us Now</a>
+        </article>
+
+        <article class="testimonial">
+            <span class="quote-label">QUOTES</span>
+            <blockquote>
+              <p>
+                <span class="quote-mark-left">&ldquo;</span>
+                the eggless cakes here are really good. Had ordered a kit kat cake which
+                was really good. Surely worth a try.
+                <span class="quote-mark-right">&rdquo;</span>
+              </p>
+            </blockquote>
+            <div class="testimonial-author">
+              <img src="./images/Darren Dunlap.png" alt="Darren Dunlap">
+              <div class="author-details">
+                <h3>Darren Dunlap</h3>
+                <p>CEO & Founder at Flex.co</p>
+              </div>
+            </div>
+            <div class="testimonial-pagination">
+              <span class="dot"></span>
+              <span class="dot-active"></span>
+              <span class="dot"></span>
+            </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <h2>Chocobrat</h2>
+          </div>
+          <nav class="footer-nav">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Help</a>
+            <a href="#">Privacy</a>
+          </nav>
+        </div>
+    
+        <hr>
+    
+        <div class="footer-bottom">
+          <p>&copy; 2021 Chocobrat. All rights reserved.</p>
+          <div class="social-icons">
+            <a href="#"><img src="./images/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./images/icon-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="./images/icon-instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="./images/icon-github.png" alt="GitHub"></a>
+            <a href="#"><img src="./images/icon-linkedin.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
