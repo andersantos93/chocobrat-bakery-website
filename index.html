@@ -1,51 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link rel="stylesheet" href="./styles/main-navbar.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Chocobrat</div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+        <ul class="nav-links">
+          <li><a href="#" id="current-page">Home</a></li>
+          <li class="dropdown">
+            <a href="./categories.html">Categories</a>
+            <ul id="categories-menu" class="dropdown-menu">
+              <li><a href="#">Red Velvet & Cream Cheese</a></li>
+              <li><a href="#">Caramel Drizzle Cakes</a></li>
+              <li><a href="#">Lemon Zest Creations</a></li>
+            </ul>
+          </li>
 
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+          <li><a href="./about.html">About Us</a></li>
+          <li id="last-item"><a href="./contact.html">Contact Us</a></li>
+        </ul>
 
-  <link rel="stylesheet" href="./styles/main-navbar.css">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button type="submit">
+            <img
+              src="./images/lens.png"
+              alt="lens"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+        </div>
 
-
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-
-      <div class="logo">Chocobrat</div>
-
-      <ul class="nav-links">
-        <li><a href="#" id="current-page">Home</a></li>
-        <li class="dropdown">
-          <a href="./categories.html">Categories</a>
-          <ul id="categories-menu" class="dropdown-menu">
-            <li><a href="#">Red Velvet & Cream Cheese</a></li>
-            <li><a href="#">Caramel Drizzle Cakes</a></li>
-            <li><a href="#">Lemon Zest Creations</a></li>
-          </ul>
-        <li><a href="./about.html">About Us</a></li>
-        <li id="last-item"><a href="./contact.html">Contact Us</a></li>
-      </ul>
-
-      <div class="search-bar">
-        <input type="text" placeholder="Search" />
-        <button type="submit">
-          <img src="./images/lens.png" alt="lens" style="width: 20px; height: 20px;">
-        </button>
+        <div class="icons">
+          <img
+            src="./images/user.png"
+            alt="user"
+            style="width: 25px; height: 25px"
+          />
+          <img
+            src="./images/cart.png"
+            alt="cart"
+            style="width: 25px; height: 25px"
+          />
+        </div>
+      </nav>
+    </header>
+  </head>
+  <body>
+    <main>
+      <div id="presentation">
+        <div class="introduction">
+          <h1>Bring you Happiness throught a piece of cake</h1>
+          <p>
+            We make Different types of cake, cholocate, soft cookies, cheesecake
+            pie or anything you want.
+          </p>
+          <div class="introduction-btn">
+            <button>Order Now</button>
+            <button>Seel All Menus</button>
+          </div>
+        </div>
+        <div class="cakes">
+          <div class="main-cake">
+            <img src="./images/chocolate-cake.png" />
+          </div>
+          <div class="carousel-cake">
+            <div class="carousel-counter">
+              <img src="./images/less-than.png" />
+              <span>01/¹²</span>
+              <img src="./images/more-than.png" />
+            </div>
+            <div class="carousel-cake-images">
+              <img src="./images/carousel-1.png" />
+              <img src="./images/carousel-2.png" />
+              <img src="./images/carousel-3.png" />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="icons">
-        <img src="./images/user.png" alt="user" style="width: 25px; height: 25px;">
-        <img src="./images/cart.png" alt="cart" style="width: 25px; height: 25px;">
+      <div id="best-selling">
+        <h1>Try our Best Selling</h1>
+        <img src="./images/divider.png" />
+        <p>
+          Here's our best creations that everyone loves. Lightness and sweetness
+          of the cake make you want more and more. Start from cake, bread and
+          other creations.
+        </p>
       </div>
-    </nav>
-  </header>
-
-</body>
-
+    </main>
+  </body>
 </html>
